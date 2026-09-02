@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinPulse AI // Market Intelligence Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">FinPulse<span>AI</span></div>
+            <nav class="nav-links">
+                <a href="#" class="active">📊 Dashboard</a>
+                <a href="#">⭐ Watchlist</a>
+                <a href="#">⚠️ System Alerts</a>
+            </nav>
+        </aside>
+
+        <!-- Central Analytics Grid -->
+        <main class="main-content">
+            <header class="top-header">
+                <h1>Market Intelligence</h1>
+                <div class="system-status">● Live Engine Running</div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Market Status</h3>
+                    <div id="market-status-val" class="value">ACTIVE</div>
+                    <span class="trend positive">Data Feeds Intact</span>
+                </div>
+                <div class="metric-card">
+                    <h3>Top Volatile Vector</h3>
+                    <div id="top-crypto-val" class="value">--</div>
+                    <span class="trend neutral">Scanning...</span>
+                </div>
+            </section>
+
+            <!-- Real-Time Data Streaming Table -->
+            <section class="table-container">
+                <h2>Real-Time Asset Streaming</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Asset</th>
+                            <th>Spot Price</th>
+                            <th>24h Delta</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="crypto-table-body">
+                        <tr>
+                            <td colspan="4" style="text-align: center; color: var(--text-muted);">Initializing secure live data stream...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <!-- Right-Aligned AI Chat Panel -->
+        <aside class="ai-panel">
+            <div class="ai-header">
+                <h2>🤖 Market Agent Insights</h2>
+                <span class="badge">Gemini Flash LLM</span>
+            </div>
+            <div class="ai-chat-space" id="chat-box">
+                <div class="message system">
+                    <p><strong>System Core:</strong> Ready. Click an asset's "Run AI Analysis" button to generate autonomous risk signals directly from live price arrays.</p>
+                </div>
+            </div>
+            <div class="ai-input-wrapper">
+                <input type="text" id="user-input" placeholder="Engine processing..." disabled>
+                <button class="btn-send">⚡</button>
+            </div>
+        </aside>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
